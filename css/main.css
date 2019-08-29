@@ -23,6 +23,10 @@ html {
   box-sizing: border-box;
 }
 
+p {
+  margin: 0;
+}
+
 /*
  * Remove text-shadow in selection highlight:
  * https://twitter.com/miketaylr/status/12228805301
@@ -121,17 +125,32 @@ textarea {
 
  /* --------------------HEader Styles-------------------- */
 
+header {
+  padding: 15px 0;
+}
+
 header .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 90%;
 }
- nav {
+
+.header-divider {
+  width: 100%;
+}
+
+ header nav {
    display: flex;
    justify-content: space-between;
    align-items: center;
    flex-flow: row wrap;
+   width: 60%;
+ }
+
+ header nav ul {
+   width: 45%;
  }
 
   /* --------------------Main Styles-------------------- */
@@ -139,10 +158,17 @@ header .content-wrapper {
 /* --------------------Hero Section ------- */
 
 .hero-area {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
+ display: flex;
+ align-items: center;
+ justify-content: center;
+}
+
+.hero-area .content-wrapper {
+  width: 90%;
+}
+
+.hero-tagline {
+  padding: 50px 0;
 }
 
 /* --------------------Newsletter Aside ------- */
@@ -154,6 +180,21 @@ aside {
   flex-flow: row wrap;
 }
 
+aside .content-wrapper {
+  width: 90%;
+}
+
+.form-description {
+  padding: 30px 0;
+}
+
+.form {
+  margin-bottom: 30px;
+}
+
+.form h2, input {
+  padding-bottom: 20px;
+}
 /* -------------------Features Section ------- */
 
 .features {
@@ -161,6 +202,15 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 50px 0;
+}
+
+.features h2 {
+  width: 90%;
+}
+
+.features article {
+  width: 55%;
 }
 
 .features-items {
@@ -168,6 +218,10 @@ aside {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.fontawesome-icon {
+  padding-bottom: 40px;
 }
 /* -------------------Reviews Section ------- */
 
@@ -178,6 +232,25 @@ aside {
   flex-flow: column wrap;
 }
 
+.reviews .content-wrapper {
+  margin: 50px 0;
+  width: 90%;
+}
+
+.reviews-head h2 {
+  padding-bottom: 30px;
+}
+
+.reviews-text h3{
+  padding: 20px 0;
+}
+
+/* -------------------footer Section ------- */
+
+footer .content-wrapper {
+  margin: 50px 0;
+  width: 55%;
+}
 
 
 
