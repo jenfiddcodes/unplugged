@@ -108,11 +108,8 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
- /* --------------------HOME PAGE-------------------------------------- */
+
  /* -------------------- Base Header - Footer Styles ------ */
-
-
-
 
  header, footer {
    display: flex;
@@ -121,9 +118,7 @@ textarea {
    flex-flow: row wrap;
  }
 
-
-
- /* --------------------HEader Styles-------------------- */
+ /* --------------------HEader Styles for entire site-------------------- */
 
 header {
   padding: 15px 0;
@@ -152,8 +147,27 @@ header .content-wrapper {
  header nav ul {
    width: 45%;
  }
+ /* -------------------footer Section for entire site ------- */
 
-  /* --------------------Main Styles-------------------- */
+ footer .content-wrapper {
+   margin: 50px 0;
+   width: 55%;
+ }
+
+ .footer-content h3 {
+   padding-bottom: 20px;
+ }
+
+ .social {
+   margin-top: 45px;
+ }
+
+ .copyright {
+   padding-bottom: 10px;
+ }
+
+/* --------------------HOME PAGE-------------------------------------- */
+
 
 /* --------------------Hero Section ------- */
 
@@ -245,12 +259,6 @@ aside .content-wrapper {
   padding: 20px 0;
 }
 
-/* -------------------footer Section ------- */
-
-footer .content-wrapper {
-  margin: 50px 0;
-  width: 55%;
-}
 
 
 
@@ -261,6 +269,21 @@ footer .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+
+}
+
+.mission-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 50px 0;
+  padding: 0 20px 0;
+  width: 90%;
+}
+
+.mission-content p{
+  padding-top: 20px;
 }
 
 .contact-section {
@@ -268,6 +291,17 @@ footer .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  margin: 50px 0;
+  padding: 0 20px 0;
+  width: 90%;
+}
+
+.general-info h3 {
+  padding-bottom: 20px;
+}
+
+.chat h3 {
+  padding: 20px 0;
 }
 
 /* --------------------FAQ PAGE-------------------------------------- */
@@ -284,6 +318,17 @@ footer .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 90%;
+  margin: 50px 0;
+  padding: 0 20px 0;
+}
+
+.faq-item {
+  margin: 35px 0;
+}
+
+.faq-item h3 {
+  padding-bottom: 20px;
 }
 
 
