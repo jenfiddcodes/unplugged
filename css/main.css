@@ -129,7 +129,7 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 90%;
+  width: 60%;
 }
 
 .header-divider {
@@ -141,7 +141,6 @@ header .content-wrapper {
    justify-content: space-between;
    align-items: center;
    flex-flow: row wrap;
-   width: 60%;
  }
 
  header nav ul {
@@ -151,18 +150,28 @@ header .content-wrapper {
 
  footer .content-wrapper {
    margin: 50px 0;
-   width: 55%;
+   display: flex;
+   justify-content: center;
+   align-content: center;
+   flex-flow: row wrap;
+   width: 90%;
  }
 
- .footer-content h3 {
+ footer h3 {
    padding-bottom: 20px;
  }
 
+ footer address {
+   width: 60%;
+ }
+
  .social {
-   margin-top: 45px;
+   width: 60%;
+   margin: 45px 0;
  }
 
  .copyright {
+   text-align: center;
    padding-bottom: 10px;
  }
 
@@ -187,15 +196,14 @@ header .content-wrapper {
 
 /* --------------------Newsletter Aside ------- */
 
-aside {
+
+aside .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-}
-
-aside .content-wrapper {
   width: 90%;
+  padding: 0 20px 0;
 }
 
 .form-description {
@@ -216,7 +224,8 @@ aside .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  padding: 50px 0;
+  margin: 50px 0;
+  padding: 0 20px 0;
 }
 
 .features h2 {
@@ -239,16 +248,14 @@ aside .content-wrapper {
 }
 /* -------------------Reviews Section ------- */
 
-.reviews {
+.reviews .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: column wrap;
-}
-
-.reviews .content-wrapper {
+  flex-flow: row wrap;
   margin: 50px 0;
   width: 90%;
+  padding: 0 20px 0;
 }
 
 .reviews-head h2 {
@@ -286,14 +293,14 @@ aside .content-wrapper {
   padding-top: 20px;
 }
 
-.contact-section {
+.contact-content {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
   margin: 50px 0;
   padding: 0 20px 0;
-  width: 90%;
+  flex-basis: 90%;
 }
 
 .general-info h3 {
@@ -310,7 +317,7 @@ aside .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: column wrap;
+  flex-flow: row wrap;
 }
 
 .faq-content {
@@ -421,9 +428,168 @@ aside .content-wrapper {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+
+
+/* =======TABLET SIZE======================*/
+@media only screen and (min-width: 768px) {
+
+  /* -------------------- Base Header - Footer Styles ------ */
+
+  header, footer {
+    flex-flow: row nowrap;
+  }
+  /* --------------------HEader Styles for entire site-------------------- */
+
+ header {
+   padding: 35px 0;
+ }
+
+ header .content-wrapper {
+   flex-flow: row nowrap;
+   justify-content: space-between;
+   width: 90%;
+ }
+
+ .header-divider {
+   display: none;
+ }
+
+  header nav {
+    flex-flow: row nowrap;
+  }
+
+  header nav ul {
+    padding-left: 40px;
+    width: 20%;
+  }
+  /* -------------------footer Section for entire site ------- */
+
+  footer .content-wrapper {
+    width: 85%;
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+    footer address {
+      width: 25%;
+    }
+
+    .social {
+      width: 25%;
+    }
+
+    .copyright {
+      width: 90%;
+    }
+
+
+
+  /* --------------------HOME PAGE-------------------------------------- */
+
+
+  /* --------------------Hero Section ------- */
+
+
+
+  /* --------------------Newsletter Aside ------- */
+
+
+  aside .content-wrapper {
+    justify-content: space-between;
+  }
+
+  .form-description {
+    width: 40%;
+  }
+
+  .form {
+    width: 40%;
+  }
+
+  /* -------------------Features Section ------- */
+
+
+  .features {
+    justify-content: space-between;
+  }
+
+  .features article {
+    flex-basis: 30%;
+    padding-left: 0;
+  }
+
+  /* -------------------Reviews Section ------- */
+
+
+  .reviews .content-wrapper {
+      justify-content: space-between;
+  }
+
+  .reviews-head {
+    width: 40%;
+  }
+
+  .reviews-text {
+    width: 40%;
+  }
+
+
+
+
+
+  /* --------------------ABOUT PAGE-------------------------------------- */
+
+
+  .mission-content {
+    justify-content: space-between;
+  }
+
+    .mission-content h1{
+      width: 85%;
+    }
+
+    .mission-content p{
+      width: 42%;
+      padding-top: 0px;
+    }
+
+  .contact-content {
+    justify-content: space-between;
+    align-items: baseline;
+  }
+
+    .contact-content h1 {
+      width: 85%;
+    }
+
+    .general-info, .chat  {
+        width: 40%;
+      }
+
+
+
+
+  /* --------------------FAQ PAGE-------------------------------------- */
+
+  .faq-content {
+    justify-content: space-between;
+  }
+
+  .faq-content h1 {
+    flex-basis: 85%;
+  }
+
+  .faq-item {
+    flex-basis: 40%;
+  }
+
 }
+
+/* =======DESKTOP SIZE======================*/
+@media only screen and (min-width: 1200px) {
+
+}
+
 
 @media print,
   (-webkit-min-device-pixel-ratio: 1.25),
