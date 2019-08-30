@@ -192,22 +192,31 @@ header .content-wrapper {
 
 .hero-tagline {
   padding: 50px 0;
+  width: 83%;
 }
 
 /* --------------------Newsletter Aside ------- */
 
+.newsletter {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  margin: 50px 0;
+}
 
 aside .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  width: 90%;
+  flex-basis: 90%;
   padding: 0 20px 0;
 }
 
 .form-description {
   padding: 30px 0;
+  width: 82%;
 }
 
 .form {
@@ -219,21 +228,25 @@ aside .content-wrapper {
 }
 /* -------------------Features Section ------- */
 
+
 .features {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
   margin: 50px 0;
-  padding: 0 20px 0;
 }
 
 .features h2 {
   width: 90%;
 }
 
-.features article {
-  width: 55%;
+.features-articles {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  flex-basis: 90%;
 }
 
 .features-items {
@@ -241,6 +254,7 @@ aside .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  flex-basis: 65%;
 }
 
 .fontawesome-icon {
@@ -248,21 +262,26 @@ aside .content-wrapper {
 }
 /* -------------------Reviews Section ------- */
 
-.reviews .content-wrapper {
+.reviews {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+.reviews-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
   margin: 50px 0;
   width: 90%;
-  padding: 0 20px 0;
 }
 
-.reviews-head h2 {
+.reviews h2 {
   padding-bottom: 30px;
 }
 
-.reviews-text h3{
+.review-text h3{
   padding: 20px 0;
 }
 
@@ -293,6 +312,19 @@ aside .content-wrapper {
   padding-top: 20px;
 }
 
+.map {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row nowrap;
+}
+
+.contact-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
 .contact-content {
   display: flex;
   justify-content: center;
@@ -489,6 +521,9 @@ aside .content-wrapper {
 
   /* --------------------Hero Section ------- */
 
+  .hero-tagline {
+    width: 70%;
+  }
 
 
   /* --------------------Newsletter Aside ------- */
@@ -496,41 +531,50 @@ aside .content-wrapper {
 
   aside .content-wrapper {
     justify-content: space-between;
+    flex-basis: 83%;
   }
 
   .form-description {
-    width: 40%;
+    width: 35%;
   }
 
   .form {
-    width: 40%;
+    width: 38%;
   }
 
   /* -------------------Features Section ------- */
 
 
-  .features {
+  .features-articles {
     justify-content: space-between;
+    flex-basis: 83%;
   }
 
-  .features article {
+
+  .features-items {
     flex-basis: 30%;
-    padding-left: 0;
   }
 
   /* -------------------Reviews Section ------- */
 
-
-  .reviews .content-wrapper {
-      justify-content: space-between;
+  .reviews-wrapper  {
+    width: 85%;
   }
 
-  .reviews-head {
-    width: 40%;
+
+  .reviews-wrapper h2 {
+    width: 65%;
   }
 
-  .reviews-text {
-    width: 40%;
+  .review-article {
+    display: flex;
+    justify-content: space-between;
+    align-items: baseline;
+    flex-flow: row wrap;
+  }
+
+  .review-img, .review-text {
+    width: 45%;
   }
 
 
@@ -587,6 +631,78 @@ aside .content-wrapper {
 
 /* =======DESKTOP SIZE======================*/
 @media only screen and (min-width: 1200px) {
+
+    .content-wrapper {
+             max-width: 960px;
+        }
+  /* --------------------HOME PAGE-------------------------------------- */
+
+
+  /* --------------------Hero Section ------- */
+
+      .hero-tagline {
+        width: 60%;
+      }
+
+  /* --------------------Newsletter Aside ------- */
+
+      aside .content-wrapper {
+        width: 65%;
+      }
+
+      .form-description {
+        width: 26%;
+      }
+
+      .form {
+        width: 26%;
+      }
+
+  /* -------------------Features Section ------- */
+
+
+      .features h2{
+        width: 73%;
+      }
+
+      .features-articles {
+        flex-basis: 70%;
+      }
+
+
+  /* -------------------Reviews Section ------- */
+
+  .review-img, .review-text {
+    width: 38%;
+  }
+
+
+
+  /* --------------------ABOUT PAGE-------------------------------------- */
+
+
+    .mission-content h1{
+      width: 73%;
+    }
+
+    .contact-content h1 {
+      width: 80%;
+    }
+
+
+  /* --------------------FAQ PAGE-------------------------------------- */
+
+  .faq-content {
+    justify-content: space-between;
+    flex-basis: 80%;
+  }
+
+  .faq-content h1 {
+    flex-basis: 100%;
+  }
+
+
+
 
 }
 
