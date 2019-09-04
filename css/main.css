@@ -107,11 +107,56 @@ textarea {
 /* ==========================================================================
    Author's custom styles
    ========================================================================== */
+/*----------Global Styles----------*/
+
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 1em;
+  color: #e2e3ed;
+}
+
+ul li {
+  list-style-type: none;
+}
+
+a {
+  color: #e2e3ed;
+  text-decoration: none;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+}
+
+p {
+  font-size: 0.875em;
+}
+
+img {
+  width: 100%;
+}
+
+figure {
+
+}
+
+address {
+  font-style: normal;
+}
+
+.content-wrapper {
+
+}
 
 
  /* -------------------- Base Header - Footer Styles ------ */
 
  header, footer {
+   background-color: #202322;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -129,11 +174,20 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.logo {
   width: 60%;
 }
 
 .header-divider {
+  background-color: #3a3a3a;
+  height: 2px;
   width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 13px 0;
 }
 
  header nav {
@@ -141,15 +195,28 @@ header .content-wrapper {
    justify-content: space-between;
    align-items: center;
    flex-flow: row wrap;
- }
-
- header nav ul {
    width: 45%;
  }
+
+  nav ul li {
+   font-size: 1.25em;
+   font-weight: 700;
+   width: 45%;
+   display: inline;
+ }
+
+ nav ul li a:hover {
+   border-bottom: 3px solid #527158;
+ }
+
+     .about {
+          padding-left: 40px;
+     }
+
  /* -------------------footer Section for entire site ------- */
 
  footer .content-wrapper {
-   margin: 50px 0;
+   margin: 50px 0 0;
    display: flex;
    justify-content: center;
    align-content: center;
@@ -159,15 +226,43 @@ header .content-wrapper {
 
  footer h3 {
    padding-bottom: 20px;
+   font-size: 1.125em;
  }
 
  footer address {
-   width: 60%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-flow: row wrap;
+   flex-basis: 60%;
+   text-align: center;
  }
 
  .social {
-   width: 60%;
    margin: 45px 0;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   flex-flow: row wrap;
+   flex-basis: 55%;
+ }
+
+ .social-icons ul li {
+   color: #527158;
+   font-size: 2em;
+   display: inline;
+ }
+
+ .social-icons ul li i {
+   color: #527158;
+ }
+
+ .social-icons ul li a:hover i {
+   color: #fff;
+ }
+
+ .padding-left-icon {
+   padding-left: 20px;
  }
 
  .copyright {
@@ -181,6 +276,8 @@ header .content-wrapper {
 /* --------------------Hero Section ------- */
 
 .hero-area {
+  background: url("../img/hero-img.jpg") no-repeat center;
+  background-size: cover;
  display: flex;
  align-items: center;
  justify-content: center;
@@ -191,19 +288,32 @@ header .content-wrapper {
 }
 
 .hero-tagline {
-  padding: 50px 0;
-  width: 83%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
 }
+
+  .hero-tagline h1 {
+    font-size: 2.25em;
+    line-height: 1.125em;
+    padding: 25px 0 320px;
+  }
+
 
 /* --------------------Newsletter Aside ------- */
 
 .newsletter {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 50px 0;
 }
+
+  .newsletter h2 {
+    font-size: 1.125em;
+    padding-bottom: 15px;
+  }
 
 aside .content-wrapper {
   display: flex;
@@ -215,30 +325,54 @@ aside .content-wrapper {
 }
 
 .form-description {
-  padding: 30px 0;
-  width: 82%;
+  padding: 20px 0;
 }
 
 .form {
-  margin-bottom: 30px;
+  padding: 20px 0;
 }
 
-.form h2, input {
-  padding-bottom: 20px;
+
+input[type=text] {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 20px;
+  cursor: text;
+
 }
+
+input[type=button] {
+  width: 100%;
+  background-color: #2a423a;
+  color: white;
+  border: none;
+  padding: 16px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 1em;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 700;
+}
+
+
 /* -------------------Features Section ------- */
 
 
 .features {
+  background: url("../img/info-bg.jpg") no-repeat center;
+  background-size: cover;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 50px 0;
+  padding: 50px 0;
 }
 
 .features h2 {
-  width: 90%;
+  width: 85%;
+  font-size: 1.875em;
+  padding-bottom: 50px;
 }
 
 .features-articles {
@@ -255,34 +389,44 @@ aside .content-wrapper {
   align-items: center;
   flex-flow: row wrap;
   flex-basis: 65%;
+  padding-bottom: 50px;
+}
+
+.features-item-description {
+  text-align: center;
 }
 
 .fontawesome-icon {
-  padding-bottom: 40px;
+  font-size: 3em;
+  padding-bottom: 25px;
 }
 /* -------------------Reviews Section ------- */
 
 .reviews {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  padding: 50px 0;
 }
-.reviews-wrapper {
+
+.review-article {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 50px 0;
   width: 90%;
 }
 
 .reviews h2 {
-  padding-bottom: 30px;
+  padding: 0 20px 30px;
+  font-size: 1.875em;
 }
 
 .review-text h3{
   padding: 20px 0;
+  font-size: 1.125em;
 }
 
 
@@ -482,32 +626,40 @@ aside .content-wrapper {
    width: 90%;
  }
 
+ .logo {
+   width: 30%;
+ }
+
  .header-divider {
    display: none;
  }
 
   header nav {
     flex-flow: row nowrap;
+    width: 30%;
   }
 
-  header nav ul {
-    padding-left: 40px;
-    width: 20%;
+  header nav ul li{
+    font-size: 1em;
+    padding-left: 30px;
   }
   /* -------------------footer Section for entire site ------- */
 
   footer .content-wrapper {
-    width: 85%;
+    width: 80%;
     justify-content: space-between;
     align-items: baseline;
   }
 
+  footer h3 {
+    font-size: 1.5em;
+  }
     footer address {
-      width: 25%;
+      flex-basis: 20%;
     }
 
     .social {
-      width: 25%;
+      flex-basis: 26%;
     }
 
     .copyright {
@@ -522,8 +674,20 @@ aside .content-wrapper {
   /* --------------------Hero Section ------- */
 
   .hero-tagline {
-    width: 70%;
+    flex-basis: 68%;
   }
+
+  .hero-tagline h1{
+    font-size: 3em;
+  }
+
+    .hero-tagline h1 {
+      font-size: 2.25em;
+      line-height: 1.125em;
+      padding: 25px 0 320px;
+    }
+
+
 
 
   /* --------------------Newsletter Aside ------- */
@@ -531,7 +695,12 @@ aside .content-wrapper {
 
   aside .content-wrapper {
     justify-content: space-between;
+    align-items: baseline;
     flex-basis: 83%;
+  }
+
+  .newsletter h2 {
+    font-size: 1.5em;
   }
 
   .form-description {
@@ -544,6 +713,9 @@ aside .content-wrapper {
 
   /* -------------------Features Section ------- */
 
+    .features h2 {
+      font-size: 2.25em;
+    }
 
   .features-articles {
     justify-content: space-between;
@@ -557,20 +729,14 @@ aside .content-wrapper {
 
   /* -------------------Reviews Section ------- */
 
-  .reviews-wrapper  {
+  .review-article  {
     width: 85%;
-  }
-
-
-  .reviews-wrapper h2 {
-    width: 65%;
-  }
-
-  .review-article {
-    display: flex;
     justify-content: space-between;
-    align-items: baseline;
-    flex-flow: row wrap;
+
+  }
+
+  .reviews h2 {
+    width: 85%;
   }
 
   .review-img, .review-text {
