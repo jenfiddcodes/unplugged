@@ -531,13 +531,14 @@ input[type=button] {
 /* --------------------FAQ PAGE-------------------------------------- */
 
 .faq {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
 }
 
-.faq-content {
+.faq .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -547,12 +548,17 @@ input[type=button] {
   padding: 0 20px 0;
 }
 
+  .faq-content h1 {
+    font-size: 1.875em;
+  }
+
 .faq-item {
   margin: 35px 0;
 }
 
 .faq-item h3 {
   padding-bottom: 20px;
+  font-size: 1.125em;
 }
 
 
@@ -831,17 +837,28 @@ input[type=button] {
 
   /* --------------------FAQ PAGE-------------------------------------- */
 
+
   .faq-content {
+    display: flex;
     justify-content: space-between;
+    align-items: center;
+    flex-flow: row wrap;
   }
 
-  .faq-content h1 {
-    flex-basis: 85%;
-  }
+    .faq-content h1 {
+      font-size: 2.25em;
+      flex-basis: 85%;
+    }
 
   .faq-item {
     flex-basis: 40%;
   }
+
+    .faq-item h3 {
+      font-size: 1em;
+    }
+
+
 
 }
 
@@ -939,14 +956,18 @@ input[type=button] {
 
   /* --------------------FAQ PAGE-------------------------------------- */
 
-  .faq-content {
-    justify-content: space-between;
-    flex-basis: 80%;
-  }
+    .faq-content h1 {
+      font-size: 2.5em;
+    }
 
-  .faq-content h1 {
-    flex-basis: 100%;
-  }
+    .faq-item {
+      flex-basis: 40%;
+    }
+
+    .faq-item h3 {
+      font-size: 1.125em;
+    }
+
 
 
 
