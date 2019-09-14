@@ -140,16 +140,8 @@ img {
   width: 100%;
 }
 
-figure {
-
-}
-
 address {
   font-style: normal;
-}
-
-.content-wrapper {
-
 }
 
 
@@ -174,10 +166,11 @@ header .content-wrapper {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+  width: 100%;
 }
 
 .logo {
-  width: 60%;
+  width: 50%;
 }
 
 .header-divider {
@@ -192,10 +185,10 @@ header .content-wrapper {
 
  header nav {
    display: flex;
-   justify-content: space-between;
+   justify-content: center;
    align-items: center;
    flex-flow: row wrap;
-   width: 45%;
+   width: 50%;
  }
 
   nav ul li {
@@ -221,7 +214,7 @@ header .content-wrapper {
    justify-content: center;
    align-content: center;
    flex-flow: row wrap;
-   width: 90%;
+   flex-basis: 90%;
  }
 
  footer h3 {
@@ -233,9 +226,9 @@ header .content-wrapper {
    display: flex;
    justify-content: center;
    align-items: center;
-   flex-flow: row wrap;
-   flex-basis: 60%;
+   flex-flow: column wrap;
    text-align: center;
+   flex-basis: 80%;
  }
 
  .social {
@@ -243,9 +236,10 @@ header .content-wrapper {
    display: flex;
    justify-content: center;
    align-items: center;
-   flex-flow: row wrap;
-   flex-basis: 55%;
+   flex-flow: column wrap;
+   flex-basis: 80%;
  }
+
 
  .social-icons ul li {
    color: #527158;
@@ -267,7 +261,8 @@ header .content-wrapper {
 
  .copyright {
    text-align: center;
-   padding-bottom: 10px;
+   padding: 50px 0 10px;
+   width: 100%;
  }
 
 /* --------------------HOME PAGE-------------------------------------- */
@@ -366,6 +361,13 @@ input[type=button] {
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
+}
+
+.features .content-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
   padding: 50px 0;
 }
 
@@ -387,7 +389,7 @@ input[type=button] {
   display: flex;
   justify-content: center;
   align-items: center;
-  flex-flow: row wrap;
+  flex-flow: column nowrap;
   flex-basis: 65%;
   padding-bottom: 50px;
 }
@@ -404,6 +406,13 @@ input[type=button] {
 
 .reviews {
   background-color: #2a423a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.reviews .content-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -435,6 +444,7 @@ input[type=button] {
 /* --------------------ABOUT PAGE-------------------------------------- */
 
 .mission {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -450,6 +460,10 @@ input[type=button] {
   margin: 50px 0;
   padding: 0 20px 0;
   width: 90%;
+}
+
+.mission-content h1 {
+  font-size: 1.875em;
 }
 
 .mission-content p{
@@ -469,14 +483,24 @@ input[type=button] {
   align-items: center;
   flex-flow: row wrap;
 }
+
 .contact-content {
+  background-color: #2a423a;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-flow: row wrap;
-  margin: 50px 0;
-  padding: 0 20px 0;
+  padding: 50px 20px;
   flex-basis: 90%;
+}
+
+.contact-content h1 {
+  font-size: 1.875em;
+  width: 90%;
+}
+
+.general-info, .chat {
+  width: 90%;
 }
 
 .general-info h3 {
@@ -654,17 +678,15 @@ input[type=button] {
   footer h3 {
     font-size: 1.5em;
   }
-    footer address {
-      flex-basis: 20%;
-    }
 
-    .social {
-      flex-basis: 26%;
-    }
+  footer address {
+    flex-basis: 30%;
+  }
 
-    .copyright {
-      width: 90%;
-    }
+  .social {
+    flex-basis: 30%;
+  }
+
 
 
 
@@ -800,20 +822,41 @@ input[type=button] {
 
     .content-wrapper {
              max-width: 960px;
+           }
+
+
+/* --------------------HEader Styles for entire site-------------------- */
+
+
+       .logo {
+         width:25%;
+       }
+
+        header nav {
+          width: 20%;
         }
+
   /* --------------------HOME PAGE-------------------------------------- */
 
 
   /* --------------------Hero Section ------- */
 
       .hero-tagline {
-        width: 60%;
+        width: 55%;
       }
+
+        .hero-tagline h1 {
+          font-size: 3.75em;
+        }
 
   /* --------------------Newsletter Aside ------- */
 
       aside .content-wrapper {
         width: 65%;
+      }
+
+      .newsletter h2 {
+        font-size: 1.5em;
       }
 
       .form-description {
@@ -828,19 +871,24 @@ input[type=button] {
 
 
       .features h2{
-        width: 73%;
+        width:90%;
       }
 
-      .features-articles {
-        flex-basis: 70%;
-      }
 
 
   /* -------------------Reviews Section ------- */
 
-  .review-img, .review-text {
-    width: 38%;
-  }
+    .reviews h2 {
+      width: 90%;
+    }
+
+    .review-text h3{
+      font-size: 1.5em;
+    }
+
+    .review-img{
+      width: 50%;
+    }
 
 
 
